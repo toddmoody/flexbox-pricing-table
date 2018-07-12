@@ -1,5 +1,89 @@
+$green: #51b371;
+
 * {
 box-sizing: border-box;
+}
+
+//switch specific
+
+/* The switch - the box around the slider */
+.pricing-switch {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3.75rem 0 0 0;
+  h3 {
+      margin: 0 1.35rem;
+      span {
+          color: $green;
+      }
+  }
+}
+
+#annual-basic,
+#annual-std,
+#annual-pro {
+    display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* fonts */
@@ -51,8 +135,8 @@ body {
 /* Flexbox specific styles */
 .p_columns {
      display: flex;
-     flex-flow: row wrap;
-     max-width: 87%;
+     flex-flow: column;
+     max-width: 92%;
      margin: 0 auto;
      padding-top: 50px;
      padding-bottom: 50px;
@@ -157,5 +241,16 @@ body {
 .buynow:hover {
     color: black;
     border-bottom: 1px dotted black;
+}
+
+@media only screen and (min-width: 897px) {
+    .p_columns {
+        flex-direction: row;
+        max-width: 1440px;
+        padding: 3.75rem 3.75rem;
+        .p_price {
+            flex: 1 0 30%;
+        }
+    }
 }
 
