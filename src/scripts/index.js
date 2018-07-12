@@ -1,5 +1,7 @@
 import '../styles/index.scss';
 
+'use strict';
+
 document.addEventListener('DOMContentLoaded',function() {
     document.querySelector('input[type="checkbox"]').onchange=pricingToggle;
 },false);
@@ -36,7 +38,7 @@ const pricingToggle = () => {
 
         annualPro.style.display = "none";
         monthlyPro.style.display = "block";
-        
+
     } else {
         console.log("what else is there!");
     }
