@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>webpack starterkit</title>
+  <title>Flexbox / JS pricing table</title>
 </head>
 
 <body>
@@ -17,67 +17,77 @@
       <h3>Annual pricing<span> save 15%</span></h3>
   </section> 
 
-  <div class="p_columns">
-    <div class="p_price p_price_basic">
-        <div class="p_banner_basic">
-            <p id="monthly-basic">87</p>
-            <p id="annual-basic">67</p>
-            <p class="p_sub_header">Basic</p>
-            <a href="#" class="p_btn">Start your trial</a>
-            <a href="#" class="buynow">Or buy now</a>
+  <section class="pricing-tble">
+    <div class="pricing-col">
+        <div class="pricing-header">
+            <p>$</p>
+            <p id="monthly-basic" class="price">87</p>
+            <p id="annual-basic" class="price">67</p>
+            <p>/mo</p>
         </div>
-        <ul class="p_ul">
-            <li class="p_li">A single survey/form with up to 100 questions</li>
-            <li class="p_li">Specifid amount of data & SMS credits (see below for details)</li>
-            <li class="p_li">Access to our mobile app & web-based application to build surveys, collect data and analyze the results</li>
-            <li class="p_li">Create a question bank and leverage one of our 180 survey templates</li>
-            <li class="p_li">Share forms and surveys with groups</li>
-            <li class="p_li">Automatically acknowledge a survey submission</li>
-            <li class="p_li">Require answer completion and provide answer validatin</li>
-            <li class="p_li">All our surveys are 508 Accessible</li>
+        <h3>Basic</h3>   
+        <ul class="pricing-feat">
+            <li>A single survey/form with up to 100 questions</li>
+            <li>Specifid amount of data & SMS credits (see below for details)</li>
+            <li>Access to our mobile app & web-based application to build surveys, collect data and analyze the results</li>
+            <li>Create a question bank and leverage one of our 180 survey templates</li>
+            <li>Share forms and surveys with groups</li>
+            <li>Automatically acknowledge a survey submission</li>
+            <li>Require answer completion and provide answer validatin</li>
+            <li>All our surveys are 508 Accessible</li>
         </ul>
-    </div>
-    <div class="p_price p_price_std">
-        <div class="p_banner_std">
-                <p id="monthly-std">150</p>
-                <p id="annual-std">127</p>
-            <p class="p_sub_header">Standard</p>
-            <a href="#" class="p_btn">Start your trial</a>
-            <a href="#" class="buynow">Or buy now</a>
+        <div class="pricing-ftr"> 
+            <a href="#" class="pricing-btn">Start your trial</a>
+            <a href="#" class="pricing-buynow">Or buy now</a>
         </div>
-        <ul class="p_ul">
-            <li class="p_li">All Free features +</li>
-            <li class="p_li">Multimedia, multilingual, any alphabet survey questions</li>
-            <li class="p_li">Send one-way messages to prompt survey respones</li>
-            <li class="p_li">Leverage our SMS in-country gateways</li>
-            <li class="p_li">Create user groups, import and share cases</li>
-            <li class="p_li">Enable role-based access</li>
-            <li class="p_li">Integrate with our open API</li>
-            <li class="p_li">Guaranteed 3 business day support response time</li>
-        </ul>
     </div>
-    <div class="p_price p_price_pro">
-        <div class="p_banner_pro">
-            <!-- <div class="ribbon"><span>Best Value</span></div> -->
-            <p id="monthly-pro">300</p>
-            <p id="annual-pro">255</p>
-            <p class="p_sub_header">Professional</p>
-            <a href="#" class="p_btn">Start your trial</a>
-            <a href="#" class="buynow">Or buy now</a>
+    <div class="pricing-col">
+        <div class="pricing-header">
+                <p>$</p>
+                <p id="monthly-std" class="price">150</p>
+                <p id="annual-std" class="price">127</p>
+                <p>/mo</p>
         </div>
-        <ul class="p_ul">    
-            <li class="p_li">All Standard features +</li>
-            <li class="p_li">Interactive SMS data collection to collect complex data with logic-based SMS ussd</li>
-            <li class="p_li">Case Management & User case manaagement</li>
-            <li class="p_li">Support to connect new in country gateways</li>
-            <li class="p_li">Workflow triggers, complex decision support & custom validation</li>
-            <li class="p_li">Custom fields and Rating questions</li>
-            <li class="p_li">Create custom reports</li>
-            <li class="p_li">Two factor authentication</li>
-            <li class="p_li">Guaranteed 1 business day support response time</li>
+        <h3>Standard</h3>   
+        <ul class="pricing-feat">
+            <li>A single survey/form with up to 100 questions</li>
+            <li>Specifid amount of data & SMS credits (see below for details)</li>
+            <li>Access to our mobile app & web-based application to build surveys, collect data and analyze the results</li>
+            <li>Create a question bank and leverage one of our 180 survey templates</li>
+            <li>Share forms and surveys with groups</li>
+            <li>Automatically acknowledge a survey submission</li>
+            <li>Require answer completion and provide answer validatin</li>
+            <li>All our surveys are 508 Accessible</li>
         </ul>
+        <div class="pricing-ftr"> 
+            <a href="#" class="pricing-btn">Start your trial</a>
+            <a href="#" class="pricing-buynow">Or buy now</a>
+        </div>
     </div>
-</div>
+    <div class="pricing-col">
+        <div class="pricing-header">
+                <p>$</p>
+                <p id="monthly-pro" class="price">300</p>
+                <p id="annual-pro" class="price">255</p>
+                <p>/mo</p>
+        </div>
+        <h3>Pro</h3>  
+        <ul class="pricing-feat">
+            <li>A single survey/form with up to 100 questions</li>
+            <li>Specifid amount of data & SMS credits (see below for details)</li>
+            <li>Access to our mobile app & web-based application to build surveys, collect data and analyze the results</li>
+            <li>Create a question bank and leverage one of our 180 survey templates</li>
+            <li>Share forms and surveys with groups</li>
+            <li>Automatically acknowledge a survey submission</li>
+            <li>Require answer completion and provide answer validatin</li>
+            <li>All our surveys are 508 Accessible</li>
+        </ul>
+        <div class="pricing-ftr"> 
+            <a href="#" class="pricing-btn">Start your trial</a>
+            <a href="#" class="pricing-buynow">Or buy now</a>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
