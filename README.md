@@ -1,4 +1,4 @@
-## App Name 
+#### App Name 
 
 MyMango - Flexbox / JS pricing table rebuild 
 
@@ -10,7 +10,7 @@ Additionally, I thought a good enhancement to present to the client would be a t
 
 ###### Staging URL
 
-https://toddmoody.github.io/flexbox-pricing-table/
+http://flex.pricing.toddmoody.co.nz/
 
 ###### Key deliverables
 
