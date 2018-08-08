@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
 // color variables
 $green: #7fce86;
 $green-dk: #63a068;
 $murone: #8f2d72;
 $murone-dk: #702359;
 $background: #f1f2c0;
-
+$slate: rgb(30, 32, 34);
+$statement:  rgb(107, 118, 126);
 
 * {
 box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
 }
 
 .pricing-btn {
@@ -15,11 +19,41 @@ box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 }
 
+h1 {
+ 
+    font-weight: 300;
+    color: $slate;
+    font-size: 2.35rem;
+}
+
+h1 {
+
+    font-weight: 300;
+    color: $slate;
+    font-size: 2.35rem;
+}
+
+p,
+li {
+
+    font-weight: 400;
+    color: $slate;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     background-color: $background;
+}
+
+header {
+    text-align: center;
+    padding-top: 3.8rem;
+    p {
+        color: $statement;
+        font-size: 1.35rem;
+    }
 }
 
 .pricing-tble {
@@ -88,10 +122,10 @@ body {
             }
         }
         .pricing-ftr {
+            margin-top: auto;
             padding: 0 0 1.95rem 0;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
             .pricing-btn {
                 background-color: $murone;
                 border: 1px solid $murone;

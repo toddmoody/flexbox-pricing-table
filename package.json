@@ -1,28 +1,17 @@
 {
-  "name": "yet-another-webpack-es6-starterkit",
+  "name": "Flexbox pricing table",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
     "dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/yet-another-webpack-es6-starterkit.git"
-  },
   "keywords": [
     "webpack",
-    "startkit",
     "frontend",
     "es6",
     "javascript",
     "webdev"
   ],
-  "author": "webkid.io",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/yet-another-webpack-es6-starterkit/issues"
-  },
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -41,7 +30,6 @@
       "es2015"
     ]
   },
-  "homepage": "https://github.com/wbkd/yet-another-webpack-es6-starterkit#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",

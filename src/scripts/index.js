@@ -8,16 +8,12 @@ document.addEventListener('DOMContentLoaded',function() {
 
 const pricingToggle = () => { 
     const checkBox = document.getElementById("checkbox");
-    
     const monthlyBasic = document.getElementById("monthly-basic");
     const annualBasic = document.getElementById("annual-basic");
-
     const monthlyStd = document.getElementById("monthly-std");
     const annualStd = document.getElementById("annual-std");
-
     const monthlyPro = document.getElementById("monthly-pro");
     const annualPro = document.getElementById("annual-pro");
-
 
     if (checkBox.checked == true) {
         annualBasic.style.display = "block";
