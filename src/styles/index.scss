@@ -50,9 +50,14 @@ body {
 header {
     text-align: center;
     padding-top: 3.8rem;
+    max-width: 85%;
+    margin: 0 auto;
+    h1 {
+        font-size: 1.85rem;
+    }
     p {
         color: $statement;
-        font-size: 1.35rem;
+        font-size: 1.15rem;
     }
 }
 
@@ -91,22 +96,41 @@ header {
         }
         .header-std {
             background: $murone;
-            padding: 2.75rem 0;
+            padding: 2.75rem 0 0 0;
             border-radius: 7px 7px 0 0;
             h3 {
                 text-transform: uppercase;
                 color: white;
                 letter-spacing: 0.18rem
             }
+            .wave {
+                margin-bottom: 0;
+                svg {
+                    .u-fill-white {
+                        fill: #FFF;
+                    }
+                }
+            
+            }
         }
+
         .header-feat {
             background: $green;
-            padding: 2.75rem 0;
+            padding: 2.75rem 0 0 0;
             border-radius: 7px 7px 0 0;
             h3 {
                 text-transform: uppercase;
                 color: white;
                 letter-spacing: 0.18rem
+            }
+            .wave {
+                margin-bottom: 0;
+                svg {
+                    .u-fill-white {
+                        fill: #FFF;
+                    }
+                }
+            
             }
         }
         .pricing-feat {
@@ -175,21 +199,6 @@ header {
     }
 }
 
-@media only screen and (min-width: 897px) {
-    .pricing-tble {
-        flex-direction: row;
-        max-width: 1440px;
-        padding: 3.75rem 3.75rem;
-        margin-top: 2.75rem;
-        .pricing-col {
-            flex: 1 0 35%;
-            .header-feat {
-                margin-top: -52px;
-            }
-        }
-    }
-}
-
 //switch specific styles
 .pricing-switch {
     text-align: center;
@@ -197,9 +206,11 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 3.75rem 0 0 0;
+    margin: 3.75rem 0 3.65rem 0;
     h3 {
+        color: $slate;
         margin: 0 1.35rem;
+        font-size: 0.75rem;
         span {
             color: $green;
         }
@@ -270,3 +281,37 @@ header {
     border-radius: 50%;
   }
 
+
+  @media only screen and (min-width: 697px) {
+    header {
+        h1 {
+            font-size: 2.35rem;
+        }
+        p {
+            font-size: 1.45rem;
+        }
+    }
+    .pricing-switch {
+        h3 {
+            font-size: 1.15rem;
+        }
+      }
+  }
+
+
+
+  
+  @media only screen and (min-width: 897px) {
+    .pricing-tble {
+        flex-direction: row;
+        max-width: 1440px;
+        padding: 3.75rem 3.75rem;
+        margin-top: 2.75rem;
+        .pricing-col {
+            flex: 1 0 35%;
+            .header-feat {
+                margin-top: -52px;
+            }
+        }
+    }
+}
